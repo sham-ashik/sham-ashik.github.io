@@ -1,0 +1,108 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+background:#fff;
+}
+
+/* ================= HEADER ================= */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+z-index:1000;
+
+background:#FF9B51;
+color:white;
+}
+
+header nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#25343F;
+position:relative;
+
+background:
+linear-gradient(10deg, rgba(234,239,239,0.5),rgba(234,239,239,0.2)),
+url("img.jpg");
+
+background-size:cover;
+background-position:center;
+
+/* 🔥 THIS makes it stationary */
+background-attachment:fixed;
+}
+
+
+.hero h1{
+font-size:50px;
+font-weight:700;
+text-align: left;
+}
+
+.hero p{
+font-size:20px;
+margin-top:10px;
+opacity:0.9;
+text-align: center;
+}
+.hero-content
+{
+    padding:100px 20px;
+    text-align: center;
+}
+
+/* ================= CONTENT ================= */
+
+.content{
+padding:100px 20px;
+background:#BFC9D1;
+}
+
+.list{
+font-size:25px;
+list-style:disc;
+list-style-position:inside;
+text-align:center;
+max-width:700px;
+margin:20px auto 0;
+padding-left:0;  
+}
+
+
+.list li{
+margin-bottom:18px;
+line-height:1.6;
+}
+
+.hero a{
+color:#25343F;
+text-decoration:none;
+}
+

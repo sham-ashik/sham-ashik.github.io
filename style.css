@@ -1,0 +1,119 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+background:#fff;
+}
+
+/* ================= HEADER ================= */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+z-index:1000;
+
+background:#FF9B51;
+color:white;
+}
+
+header nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#25343F;
+position:relative;
+
+background:
+linear-gradient(20deg, rgba(234,239,239,0.5),rgba(234,239,239,0.2)),
+url("main.jpeg");
+
+background-size:cover;
+background-position:center;
+
+/* 🔥 THIS makes it stationary */
+background-attachment:fixed;
+}
+
+
+.hero h1{
+font-size:70px;
+font-weight:700;
+}
+
+.hero p{
+font-size:20px;
+margin-top:10px;
+opacity:0.9;
+text-align: center;
+}
+
+/* ================= CONTENT ================= */
+
+.content{
+padding:100px 20px;
+background:#BFC9D1;
+}
+
+.box{
+max-width:900px;
+margin:60px auto;
+padding:40px;
+background:#f5f5f5;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+text-align:center;
+
+/* hidden state */
+opacity:0;
+transform:translateY(60px);
+transition:all 0.8s ease;
+}
+
+/* visible state */
+.box.show{
+opacity:1;
+transform:translateY(0);
+}
+
+
+.box h2{
+margin-bottom:15px;
+}
+.list{
+list-style:disc;
+text-align:left;
+max-width:700px;
+margin:20px auto 0;
+padding-left:20px;
+}
+
+.list li{
+margin-bottom:18px;
+line-height:1.6;
+}
+
