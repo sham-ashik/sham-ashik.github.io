@@ -1,0 +1,178 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+background:#fff;
+}
+
+/* ================= HEADER ================= */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+z-index:1000;
+background:#FF9B51;
+color:white;
+}
+
+header nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+min-height:100vh;
+padding:140px 40px 80px 40px;  /* space for fixed header */
+display:flex;
+flex-direction:column;
+gap:80px;
+background:
+linear-gradient(10deg, rgba(234,239,239,0.5),rgba(234,239,239,0.2)),
+url("img.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+
+.hero-content{
+max-width:900px;
+margin:0 auto;
+text-align:center;
+}
+
+
+.hero h1{
+font-size:42px;
+font-weight:700;
+margin-bottom:30px;
+}
+
+/* ================= SLIDER ================= */
+
+.slider{
+width:1200px;
+max-width:90%;
+margin:0 auto;
+position:relative;
+overflow:hidden;
+border-radius:6px;
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+background:#fff;
+}
+
+.slides{
+position:relative;
+width:100%;
+aspect-ratio:16 / 9;   /* cinematic ratio */
+display:flex;
+align-items:center;
+justify-content:center;
+background:#f2f2f2;
+}
+
+
+
+.slide{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+object-fit:contain;
+object-position:center;
+
+opacity:0;
+transition:opacity 0.8s ease-in-out;
+}
+.slide img{
+width:100%;
+height:100%;
+object-fit:cover;   /* fills frame */
+}
+
+
+
+
+.slide.active{
+opacity:1;
+}
+.hero p{
+font-size:20px;
+margin-top:10px;
+opacity:0.9;
+text-align: center;
+}
+.hero a{
+font-size:22px;
+font-weight:700;
+color:#FF9B51;
+margin-left:8px;
+text-decoration:none;
+}
+
+.hero-content-list{
+list-style:none;
+padding:0;
+margin:30px auto 0;
+}
+
+.hero-content-list li{
+font-size:22px;
+font-weight:600;
+}
+
+.hero-content-list a{
+font-size:22px;
+font-weight:700;
+color:#FF9B51;
+margin-left:8px;
+}
+
+
+/* ================= DOTS ================= */
+
+.dots{
+display:flex;
+justify-content:center;
+margin:20px 0;
+}
+
+.dot{
+height:12px;
+width:12px;
+margin:0 6px;
+background:#ccc;
+border-radius:50%;
+cursor:pointer;
+transition:all 0.3s ease;
+}
+
+.dot.active{
+background:#FF9B51;
+transform:scale(1.2);
+}
