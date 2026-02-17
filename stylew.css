@@ -176,3 +176,65 @@ transition:all 0.3s ease;
 background:#FF9B51;
 transform:scale(1.2);
 }
+
+/* ================= MOBILE OPTIMIZATION ================= */
+
+@media (max-width: 768px){
+
+header{
+padding:15px 20px;
+}
+
+header nav a{
+margin-left:12px;
+font-size:14px;
+}
+
+.logo{
+font-size:18px;
+}
+
+/* Hero section spacing */
+.hero{
+padding:110px 20px 60px 20px;
+gap:50px;
+background-attachment:scroll; /* prevents lag on mobile */
+}
+
+.hero-content{
+max-width:100%;
+}
+
+/* Slider full width */
+.slider{
+width:100%;
+max-width:100%;
+border-radius:4px;
+}
+
+/* Make slider taller for vertical images */
+.slides{
+aspect-ratio: 3 / 4;   /* better for portrait photos */
+}
+
+/* Text sizing */
+.hero h2{
+font-size:22px;
+}
+
+.hero-content-list li{
+font-size:18px;
+}
+
+.hero a{
+font-size:18px;
+}
+
+/* Dots slightly smaller */
+.dot{
+height:10px;
+width:10px;
+margin:0 4px;
+}
+
+}
